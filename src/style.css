@@ -252,6 +252,18 @@
   .columns-3xs {
     columns: var(--container-3xs);
   }
+  .break-inside-auto {
+    break-inside: auto;
+  }
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+  .break-inside-avoid-column {
+    break-inside: avoid-column;
+  }
+  .break-inside-avoid-page {
+    break-inside: avoid-page;
+  }
   .break-after-avoid {
     break-after: avoid;
   }

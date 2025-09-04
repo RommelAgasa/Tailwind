@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break-Inside</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+
+    <!-- break-iniside-auto 
+        Default behavior. Browser decides where to break inside the element. 
+    -->
+    <div class="columns-2 gap-4">
+        <div class="bg-blue-400 p-2 break-inside-auto">
+            This box can be split between columns if it's too tall.
+            <br>Lots of text ... <br>More text... <br>Even more text..
+        </div>
+    </div>
+
+    <br>
+    <!-- break-inside-avoid 
+        Prevents breaks inside the element (try to keep the whole element together).
+    -->
+    <div class="columns-2 gap-4">
+        <div class="bg-red-400 p-2 break-inside-avoid">
+            This entire box will stay together in one column.
+            <br>Even if it overflows, browser tries not to break inside.
+        </div>
+    </div>
+
+    <br>
+    <!-- break-inside-avoid-page -->
+    <div class="p-4">
+        <div class="bg-green-400 p-2 break-inside-avoid-page">
+            This section won’t be broken across pages when printing.
+            <br>Useful for tables, images, charts.
+        </div>
+    </div>
+
+    <br>
+    <!-- break-iniside-avoid-column 
+        Similar to avoid, but specifically for multi-column layouts → ensures one item is not cut between columns.
+     -->
+    <div class="columns-2 gap-4">
+        <div class="bg-purple-400 p-2 break-inside-avoid-column">
+            This box will stay in one column (not split).
+            <br>Even if tall, the browser moves it entirely to the next colum
+        </div>
+    </div>
+
+</body>
+</html>
