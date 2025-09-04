@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break After</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+
+    <!-- break-after-column -->
+    <div class="columns-3 gap-4 p-4">
+        <div class="bg-blue-400 p-2">Item 1</div>
+        <div class="bg-red-400 p-2">Item 2</div>
+
+        <!-- Force break here -->
+         <div class="bg-green-400 p-2 break-after-column">
+            Item 3 (forces new column after me)
+         </div>
+
+         <div class="bg-yellow-400 p-2">Item 4</div>
+         <div class="bg-purple-400 p-2">Item 5</div>
+         <div class="bg-pink-400 p-2">Item 6</div>
+    </div>
+
+    <br>
+    <!-- break-after-page -->
+     <div class="p-4">
+        <div class="bg-blue-400 p-2 break-after-page">
+            Chapter 1 - end with a page break.
+        </div>
+        <div class="bg-green-400 p-2">
+            Chapter 2 - starts on a new page when printing
+        </div>
+     </div>
+
+     <br>
+     <!-- break-after-left / break-after-right -->
+      <div class="p-4">
+        <div class="bg-red-400 p-2 break-after-left">
+            Preface - forces next content to start on LEFT page
+        </div>
+        <div class="bg-blue-400 p-2">
+            Chapter 1 - will appear on left page when printing
+        </div>
+      </div>
+
+    <br>
+    <div class="columns-2 gap-4 p-4">
+        <div class="bg-blue-400 p-2 break-after-avoid">
+            Item 1 (try to avoid breaking after me)
+        </div>
+        <div class="bg-red-400 p-2">Item 2</div>
+        <div class="bg-green-400 p-2">Item 3</div>
+    </div>
+    
+</body>
+</html>
