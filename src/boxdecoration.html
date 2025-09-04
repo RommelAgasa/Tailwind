@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Decoration</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body class="text-white">
+
+
+    <!-- box-decoration-slice
+        The background/padding is applied as if it’s one continuous box, even across line breaks.
+    -->
+    <p class="text-lg w-40">
+        This is a
+        <span class="bg-yellow-300 p-1 box-decoration-slice">
+            long highlighted text that will wrap
+        </span>
+        inside the paragraph
+    </p>
+
+
+    <br>
+    <!-- box-decoration-clone
+        The background/padding is cloned for each line box.
+        Looks like each wrapped line has its own mini-highlight.
+    -->
+    <p class="text-lg w-40">
+        This is a 
+        <span class="bg-green-300 p-1 box-decoration-clone">
+            long highlighted text that will wrap
+        </span>
+        inside the paragraph.
+    </p>
+    
+
+
+</body>
+</html>
