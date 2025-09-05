@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="columns-2 gap-4">
+        <!-- Top Left -->
+        <div class="bg-blue-200 aspect-square overflow-hidden">
+            <img src="https://picsum.photos/400/300" alt=""
+            class="w-full h-full object-cover object-top-left">
+            <p class="text-center text-sm">object-top-left</p>
+        </div>
+
+        <!-- Center (default)-->
+        <div class="bg-green-200 aspect-square overflow-hidden">
+            <img src="https://picsum.photos/400/300" alt=""
+            class="w-full h-full object-cover object-center">
+            <p class="text-center text-sm">object-center</p>
+        </div>
+
+        <!-- Bottom Right -->
+        <div class="bg-pink-200 aspect-square overflow-hidden">
+            <img src="https://picsum.photos/400/200" alt=""
+            class="w-full h-full object-cover object-bottom-right">
+            <p class="text-center text-sm">object-bottom-right</p>
+        </div>
+
+        <!-- Custom Position -->
+        <div class="bg-yellow-200 aspect-square overflow-hidden">
+            <img src="https://picsum.photos/400/300" alt=""
+            class="w-full h-full object-cover object-[80%_20%]">
+            <p class="text-center text-sm">object-[80%_20%]</p>
+        </div>
+    </div>
+
+</body>
+</html>

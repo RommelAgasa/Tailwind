@@ -624,6 +624,18 @@
   .object-scale-down {
     object-fit: scale-down;
   }
+  .object-\[80\%_20\%\] {
+    object-position: 80% 20%;
+  }
+  .object-bottom-right {
+    object-position: right bottom;
+  }
+  .object-center {
+    object-position: center;
+  }
+  .object-top-left {
+    object-position: left top;
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
