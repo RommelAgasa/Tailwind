@@ -63,8 +63,65 @@
         </div>
     </div>
 
-
     <!-- We have also float-end, float-start, float-none -->
+
+
+    <br> <br>
+
+    <!--LTR + RTL -->
+    <!-- LTR Example (default) -->
+    <div class="columns-2 gap-4 mb-8">
+        <!-- Left column -->
+        <div class="bg-blue-200 p-4 aspect-ratio">
+            <img src="https://picsum.photos/120" alt=""
+                class="float-left mr-2 rounded-lg aspect-square obejct-cover">
+            <p>
+                Text wrapping beside <code>float-left</code> image.
+            </p>
+            <p class="bg-yellow-200 p-2 mt-2 clear-start">
+                <code>clear-start</code> → In LTR, this acts like <code>clear-left</code>.
+            </p>
+        </div>
+
+        <!-- Left-column -->
+        <div class="bg-green-200 p-4 aspect-square">
+            <img src="https://picsum.photos/120" alt=""
+                class="float-right ml-2 rounded-lg aspect-square object-cover">
+            <p>
+                Text wrapping beside <code>float-right</code> image.
+            </p>
+            <p class="bg-pink-200 p-2 clear-end">
+                <code>clear-end</code> → In LTR, this acts like <code>clear-right</code>.
+            </p>
+        </div>
+    </div>
+
+    <!-- RTL Example -->
+    <div dir="rtl" class="columns-2 gap-4">
+        <!-- Left column (now logical Right)-->
+         <div class="bg-purple-200 p-4 aspect-square">
+            <img src="https://picsum.photos/120" alt=""
+            class="float-start mr-2 rounded-lg aspect-square object-cover">
+            <p>
+                Text wrapping beside <code>float-start</code> image (RTL = right).
+            </p>
+            <p class="bg-red-200 p-2 mt-2 clear-start">
+                <code>clear-start</code> → In RTL, this clears the right float.
+            </p>
+         </div>
+
+         <!-- Right column (now logical left )-->
+        <div class="bg-orange-200 p-4 aspect-square">
+            <img src="https://picsum.photos/120" alt=""
+            class="float-end ml-2 rounded-lg aspect-square object-cover">
+            <p>
+                Text wrapping beside <code>float-end</code> image (RTL = left).
+            </p>
+            <p class="bg-yellow-300 p-2 mt-2 clear-end">
+                <code>clear-end</code> → In RTL, this clears the left float.
+            </p>    
+        </div>
+    </div>
 
 </body>
 </html>
