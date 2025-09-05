@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    
+    <div class="columns-2 gap-4">
+        <!-- Normal stacking (auto) -->
+        <!--
+            The red box (z-50) can overlap outside its parent 
+            and even cover other siblings if they exist.
+        -->
+        <div class="relative bg-blue-200 p-4 aspect-square isolation-auto">
+           <div class="absolute top-4 left-4 w-24 h-24 bg-red-400 z-50">
+                High z-index box
+           </div> 
+           <div class="absolute top-12 left-12 w-24 h-24 bg-yellow-400">
+                Overlap target
+            </div>
+        </div>
+        
+        <!-- Isolated stacking -->
+        <div class="relative bg-green-200 p-4 aspect-square isolate">
+            <!-- isolate 
+                The pink box with z-50 is contained inside its parent.
+                It can’t escape and overlap things outside the green parent box.
+            -->
+            <div class="absolute top-4 left-4 w-24 bg-pink-400 z-50">
+                High z-index box
+            </div>
+            <div class="absolute top-12 left-12 w-24 h-24 bg-purple-400">
+                Overlap target
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

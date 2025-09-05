@@ -21,7 +21,6 @@
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-cyan-50: oklch(98.4% 0.019 200.873);
     --color-blue-200: oklch(88.2% 0.059 254.128);
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
@@ -39,7 +38,6 @@
     --spacing: 0.25rem;
     --container-3xs: 16rem;
     --container-2xs: 18rem;
-    --container-2xl: 42rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-extrabold: 800;
@@ -210,6 +208,39 @@
     white-space: nowrap;
     border-width: 0;
   }
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .left-12 {
+    left: calc(var(--spacing) * 12);
+  }
+  .isolate {
+    isolation: isolate;
+  }
+  .isolation-auto {
+    isolation: auto;
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-50 {
+    z-index: 50;
+  }
   .float-end {
     float: inline-end;
   }
@@ -354,14 +385,14 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
   .w-2xs {
     width: var(--container-2xs);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -375,11 +406,11 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
-  }
-  .w-300 {
-    width: calc(var(--spacing) * 300);
   }
   .w-full {
     width: 100%;
@@ -566,9 +597,6 @@
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
