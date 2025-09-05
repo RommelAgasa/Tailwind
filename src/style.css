@@ -17,6 +17,7 @@
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-cyan-50: oklch(98.4% 0.019 200.873);
+    --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-violet-200: oklch(89.4% 0.057 293.283);
@@ -29,7 +30,6 @@
     --container-3xs: 16rem;
     --container-2xs: 18rem;
     --container-2xl: 42rem;
-    --container-6xl: 72rem;
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-extrabold: 800;
@@ -203,6 +203,12 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .box-border {
+    box-sizing: border-box;
+  }
+  .box-content {
+    box-sizing: content-box;
+  }
   .flex {
     display: flex;
   }
@@ -233,9 +239,6 @@
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
-  .w-2xl {
-    width: var(--container-2xl);
-  }
   .w-2xs {
     width: var(--container-2xs);
   }
@@ -244,9 +247,6 @@
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
-  }
-  .w-80 {
-    width: calc(var(--spacing) * 80);
   }
   .w-full {
     width: 100%;
@@ -308,9 +308,6 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
   .space-y-6 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -332,8 +329,15 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
   .border-violet-600 {
     border-color: var(--color-violet-600);
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
   }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
@@ -394,9 +398,6 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
-  }
   .text-center {
     text-align: center;
   }
@@ -413,9 +414,6 @@
   }
   .text-black {
     color: var(--color-black);
-  }
-  .text-cyan-50 {
-    color: var(--color-cyan-50);
   }
   .text-white {
     color: var(--color-white);
@@ -445,11 +443,6 @@
   .md\:aspect-square {
     @media (width >= 48rem) {
       aspect-ratio: 1 / 1;
-    }
-  }
-  .md\:break-after-auto {
-    @media (width >= 48rem) {
-      break-after: auto;
     }
   }
   .md\:bg-amber-700 {
