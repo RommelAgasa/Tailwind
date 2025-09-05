@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white">
+    
+    <!-- inline 
+        Flows with text, no line break.
+        Ignores width/height.
+    -->
+     <span class="inline bg-yellow-200">Inline</span>
+
+     <br>
+    <!-- block 
+        Starts on a new line, takes full width.
+    -->
+    <div class="block bg-blue-200">Block</div>
+
+    <br>
+    <!-- inline-block 
+        Behaves like inline (flows with text), but respects width/height.
+    -->
+    <span class="inline-block w-20 h10 bg-green-200">Inline-block</span>
+
+
+    <br>
+    <!-- flow-root 
+        Creates a new block formatting context (useful for clearing floats).
+    -->
+    <div class="flow-root bg-red-200">
+        <img src="../assets/img/image.jpg" class="float-left w-20 h-20" alt="">
+        <p>This container wraps floated content correctly.</p>
+    </div>
+
+    <br>
+    <!-- Flex -->
+    <div class="flex gap-2">
+        <div class="bg-blue-300 w-4">A</div>
+        <div class="bg-red-300 w-4">B</div>
+    </div>
+
+    <br>
+    <!-- Grid 
+        grid → display: grid; (block-level grid)
+        inline-grid → display: inline-grid;
+    -->
+    <div class="grid grid-cols-2 gap-2">
+        <div class="bg-yellow-300 w-8">1</div>
+        <div class="bg-green-300 w-8">2</div>
+    </div>
+
+    <br>
+    <!-- Contents 
+        Makes the element disappear visually, but its children stay and inherit the parent’s box.
+    -->
+    <div class="bg-blue-200 p-4">
+        <div class="bg-pink-300">Child 1</div>
+        <div class="bg-purple-300">Child 2</div>
+    </div>
+
+    <div class="contents bg-blue-200 p-4">
+        <div class="bg-pink-300">Child 1</div>
+        <div class="bg-purple-300">Child 2</div>
+    </div>
+
+
+    <br>
+    <!-- Table 
+        Used when mimicking HTML tables but with divs.
+    -->
+    <div class="table w-full border">
+        <div class="table-row-group">
+            <div class="table-row">
+                <div class="table-cell border p-2">Cell 1</div>
+                <div class="table-cell border p-2">Cell 2</div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <!-- List Item -->
+    <div class="list-item list-disc ml-6">
+        I behave like an li
+    </div>
+
+    <br>
+    <!-- hidden -->
+    <div class="hidden">
+        You can't see me
+    </div>
+
+
+    <br>
+    <!-- sr-only ( screen reader only)-->
+    <button>
+        <span class="sr-only">Submit Form</span>
+    </button>
+
+
+</body>
+</html>
