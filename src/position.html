@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    
+
+    <div class="p-4 space-y-6">
+        <!-- Static -->
+        <div class="static bg-gray-300 p-4">
+            <strong>Static:</strong> Default flow (cannot use top/left).
+        </div>
+
+        <!-- Relative + Absolute -->
+        <div class="relative bg-yellow-200 h-40 w-full">
+            <p>Relative parent (yellow box) </p>
+            <div class="absolute bottom-2 right-2 bg-red-400 p-2">
+                Absolute child (bottom-right)
+            </div>
+        </div>
+
+        <!-- Fixed -->
+        <div class="fixed top-2 right-2 bg-purple-400 p-2">
+            Fixed to screen (top-right corner)
+        </div>
+
+        <!-- Sticky -->
+        <div class="h-40 overflow-y-scroll border">
+            <div class="sticky top-0 bg-blue-500 p-2">
+                Sticky headers (sticks while scrolling)
+            </div>
+            <p class="h-96">
+                Scroll down to see sticky effect... Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Suspendisse porta metus nec risus
+                pulvinar, vel ultricies justo vehicula.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
