@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="columns-2 gap-4">
+        <!-- Left Column -->
+        <div class="bg-blue-200 p-4">
+            <img class="float-left mr-2 rounded-lg aspect-square object-cover" src="https://picsum.photos/100" alt="">
+            <p>
+                This image uses <code>float-left</code>
+                Notice how the text wraps around its inside the same column.
+            </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="bg-green-200 p-4">
+            <img class="float-right ml-2 rounded-lg aspect-square object-cover" src="https://picsum.photos/100" alt="">
+            <p>
+                This image uses <code>float-left</code>
+                Notice how the text wraps around its inside the same column.
+            </p>
+        </div>
+    </div>
+
+
+    <br>
+
+    <!-- clear-left 
+     “don’t sit beside a floated element, drop below it.”
+    -->
+    <div class="columns-2 gap-4">
+        <!-- Left Column -->
+        <div class="bg-blue-200 p-4">
+            <img src="https://picsum.photos/120" alt=""
+                class="float-left mr-2 rounded-lg aspect-square object-cover">
+            <p>
+                This text wraps around the image using <code>float-left</code>.
+            </p>
+
+            <p class="clear-left bg-yellow-200 p-2 mt-2">
+                Because of <code>clear-left</code>,  
+                this paragraph drops **below** the floated image.
+            </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="bg-green-200 p-4">
+            <img src="https://picsum.photos/120" alt=""
+                class="float-right ml-2 rounded-lg aspect-square object-cover">
+            <p>
+                This text wraps around the image using <code>float-right</code>.
+            </p>
+            <p class="clear-both bg-pink-200 mt-2">
+                With <code>clear-both</code>,  
+                this text is forced below all floats (left or right).
+            </p>
+        </div>
+    </div>
+
+
+    <!-- We have also float-end, float-start, float-none -->
+
+</body>
+</html>
