@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="columns-2 gap-4">
+        <!-- Contain -->
+        <div class="bg-blue-200 aspect-square">
+            <img src="https://picsum.photos/200/300" alt=""
+            class="w-full h-full object-contain border border-blue-500">
+            <p class="text-center text-sm ">object-contain</p>
+        </div>
+
+        <!-- Cover -->
+        <div class="bg-green-200 aspect-square">
+            <img src="https://picsum.photos/200/300" alt="" 
+            class="w-full h-full object-cover border border-green-500">
+            <p class="text-center text-sm">object-cover</p>
+        </div>
+
+        <!-- Fill -->
+        <div class="bg-yellow-200 aspect-square">
+            <img src="https://picsum.photos/200/300" alt=""
+            class="w-full h-full object-fill border border-yellow-500">
+            <p class="text-center text-sm">object-fill</p>
+        </div>
+
+        <!-- None -->
+        <div class="bg-purple-200 aspect-square overflow-hidden">
+            <img src="https://picsum.photos/200/300" alt=""
+            class="object-none border border-purple-500">
+            <p class="text-center text-sm">object-none</p>
+        </div>
+
+        <!-- Scale down -->
+        <div class="bg-pink-200 aspect-square">
+            <img src="https://picsum.photos/200/300" alt=""
+            class="w-full h-full object-scale-dwon border border-pink-500">
+            <p class="text-center text-sm">object-scale-down</p>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
