@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top/Right/Bottom/Left</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- inset 
+        shorthand for top, right, bottom, left
+
+        Variants:
+            inset-0 → top:0; right:0; bottom:0; left:0;
+            inset-x-0 → left:0; right:0;
+            inset-y-0 → top:0; bottom:0;
+            inset-full → pushes by 100% (like move fully outside parent).
+            Negative versions (-inset-*) → push in opposite direction.
+            inset-auto → let browser decide (rarely used).
+    -->
+    <br><br>
+    <!-- inset-y-* → top + bottom -->
+    <div class="relative h-40 bg-gray-200">
+        <div class="absolute inset-y-0 left-0 w-20 bg-purple-400">
+            Vertical bar
+        </div>
+    </div>
+
+    <div class="realtive w-96 h-96 bg-gray-200 border rounded-lg-overflow-hidden">
+        <!-- Full overlay (inset-0 )-->
+        <div class="absolute inset-0 bg-blue-400 bg-opacity-20"></div>
+
+        <!-- Top-right badge (top-2 right- 2)-->
+        <div class="absolute top-2 right-2 bg-red-500 text-white text-sm px-2 py-1 rounded">
+            New
+        </div>
+
+        <!-- Footer bar (inset-x-0 bottom-0 )-->
+        <div class="absolute inset-x-0 bottom-0 bg-green text-white text-center py-2">
+            Footer bar
+        </div>
+
+        <!-- Perfectly centered element (top-1/2 left-1/2 + translate) -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-purple-500 text-white px-4 py-2 rounded">
+            Centered
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
