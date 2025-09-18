@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- z-<number> -->
+    <div class="realtive z-10 bg-blue-300 p-4">On Top (z-10)</div>
+    <div class="relative z-0 bg-gray-300 p-4 -mt-8">Behind (z-0)</div>
+
+
+    <br>
+    <!-- z-auto 
+        Usually used kapag gusto mo ibalik sa normal stacking flow (default).
+    -->
+    <div class="relative z-auto bg-green-300 p-4">Z-Auto (default stacking)</div>
+
+
+    <br>
+    <!-- z-[<value>] -->
+    <div class="relative z-[9999] bg-red-300 p-4">Super on top</div>
+
+</body>
+</html>

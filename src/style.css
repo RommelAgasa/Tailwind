@@ -306,8 +306,26 @@
   .isolation-auto {
     isolation: auto;
   }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-10 {
+    z-index: 10;
+  }
   .z-50 {
     z-index: 50;
+  }
+  .z-\[9999\] {
+    z-index: 9999;
+  }
+  .z-\[\<value\>\] {
+    z-index: <value>;
+  }
+  .z-auto {
+    z-index: auto;
   }
   .float-end {
     float: inline-end;
@@ -368,6 +386,9 @@
   }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
+  }
+  .-mt-8 {
+    margin-top: calc(var(--spacing) * -8);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
