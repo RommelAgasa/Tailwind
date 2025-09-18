@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-column</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <!-- col-span-<number> 
+        Pinaka-common, para i-merge yung item across multiple columns.    
+    -->
+    <div class="grid grid-cols-3 gap-2 border p-2">
+        <div class="col-span-2 bg-blue-400 p-2">Span 2 cols</div>
+        <div class="bg-green-400 p-2">1</div>
+        <div class="bg-red-400 p-2">2</div>
+    </div>
+
+    <br>
+    <!-- col-span-full 
+        Kukunin niya lahat ng columns (parang header/footer).
+    -->
+    <div class="grid grid-cols-4 gap-2 border p-2">
+        <div class="col-span-full bg-purple-500 p-2">Full width header</div>
+        <div class="bg-green-400 p-2">1</div>
+        <div class="bg-red-400 p-2">2</div>
+        <div class="bg-yellow-400 p-2">3</div>
+        <div class="bg-blue-400 p-2">4</div>
+    </div>
+
+    
+    <br>
+    <!-- col-start-<number> -->
+    <div class="grid grid-cols-4 gap-2 border p-2">
+        <div class="col-start-2 col-span bg-blue-400 p-2">Starts at col 2</div>
+    </div>
+
+    <br>
+    <!-- col-end-<number> 
+        Pinaposisyon kung saan magtatapos yung item.
+    -->
+    <div class="grid grid-cols-4 gap-2 border p-2">
+        <div class="col-end-4 col-span-2 bg-green-500 p-2">Ends at col 4</div>
+    </div>
+
+    <br>
+    <!-- col-auto 
+        Default, automatic placement based on flow.
+    -->
+    <div class="grid grid-cols-3 gap-2 border p-2">
+        <div class="col-auto bg-red-400 p-2">Auto placed</div>
+        <div class="col-auto bg-blue-400 p-2">Auto placed</div>
+    </div>
+
+    
+
+</body>
+</html>
