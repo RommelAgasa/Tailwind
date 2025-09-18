@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <link rel="stylesheet" href="../style.css">
+</head> 
+<body>
+
+    <!-- 
+        flex-shrink = kung gaano karaming space pwedeng 
+        i-give up ng isang item kapag masikip ang container.
+    -->
+
+    <!-- shrink 
+        flex-shrink: 1;
+        Item will shrink if needed.
+    -->
+    <div class="flex w-64 border gap-2">
+        <div class="bg-blue-400 w-48 shrink p-2 text-white">Shrink</div>
+        <div class="bg-green-400 w-48 shrink p-2 text-white">Shrink</div>
+    </div>
+
+
+    <br>
+    <!-- shrink-0 
+        flex-shrink: 0;
+        Item will not shrink even if container is too small → it will overflow.
+    -->
+    <div class="flex w-64 gap-2 overflow-auto">
+        <div class="bg-blue-400 w-48 shrink-0 p-2 text-white">No Shrink</div>
+        <div class="bg-green-400 w-48 shrink p-2 text-white">Shrink</div>
+    </div>
+
+    <br>
+    <!-- shrink-[<value>] -->
+    <div class="flex w-64 border gap-2">
+        <div class="bg-blue-400 w-48 shrink-[2] p-2 text-white">Shrink 2</div>
+        <div class="bg-green-400 w-48 shrink p-2 text-white">Shrink 1</div>
+    </div>
+    
+</body>
+</html>

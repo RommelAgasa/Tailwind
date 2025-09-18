@@ -524,6 +524,9 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-48 {
+    width: calc(var(--spacing) * 48);
+  }
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
@@ -565,6 +568,21 @@
   }
   .flex-none {
     flex: none;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+  .shrink {
+    flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .shrink-\[2\] {
+    flex-shrink: 2;
+  }
+  .shrink-\[\<value\>\] {
+    flex-shrink: <value>;
   }
   .flex-grow {
     flex-grow: 1;
