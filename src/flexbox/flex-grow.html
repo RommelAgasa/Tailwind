@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- grow 
+        flex-grow: 1;
+        expand to fill available space.
+    -->
+    <div class="flex gap-2 w-64 border">
+        <div class="bg-blue-300 grow p-2">Grow</div>
+        <div class="bg-green-300 p-2">No Grow</div>
+    </div>
+
+    <br>
+    <!-- grow-0 
+        flex-grow: 0;
+        don’t grow at all
+    -->
+    <div class="flex gap-2 w-64 border">
+        <div class="bg-blue-300 grow-0 p-2">Fixed</div>
+        <div class="bg-green-300 grow p-2">Flexible</div>
+    </div>
+
+    <br>
+    <!-- grow-[<value>] 
+        (custom value)
+        custom growth ratio.
+    -->
+    <div class="flex gap-2 w-64 border">
+        <div class="bg-blue-300 grow-[3] p-2">Grow 3</div>
+        <div class="bg-green-300 grow p-2">Grow 1</div>
+    </div>
+
+    
+</body>
+</html>
