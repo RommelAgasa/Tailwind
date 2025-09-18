@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- visible -->
+    <div class="visible bg-green-300 p-2">
+        I am visible
+    </div>
+
+     <!-- invisible 
+      Hides the element but keeps its space in the layout.
+    -->
+    <div class="invisible bg-red-300 p-2">
+        You can't see me, but I still take up space!
+    </div>
+
+    <!-- collapse 
+        Special case, mainly for table rows/columns.
+        In a table: hides the row/column without leaving space.
+        Outside tables: behaves the same as invisible.
+    -->
+    <table class="table-auto border border-gray-400">
+        <tr>
+            <td class="border p-2">Row 1</td>
+        </tr>
+        <tr class="collapse">
+            <td class="border p-2">Row 2 (collapsed, no space left)</td>
+        </tr>
+        <tr>
+            <td class="border p-2">Row 3</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
