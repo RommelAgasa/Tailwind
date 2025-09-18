@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- flex-1 / flex-[number] 
+        flex: 1 1 0%;
+        Item grows to fill available space equally with others that also have flex-1.
+    -->
+    <div class="flex gap-2">
+        <div class="bg-blue-300 flex-1 p-2">A</div>
+        <div class="bg-green-300 flex-1 p-2">B</div>
+    </div>
+
+
+    <br>
+    <!-- flex-[fraction] 
+        You can divide width by fractions (flex-1/2, flex-1/3, etc.).
+    -->
+    <div class="flex gap-2">
+        <div class="bg-blue-300 flex-1/3 p-2">1/3</div>
+        <div class="bg-green-300 flex-2/3 p-2">2/3</div>
+    </div>
+
+    <br>
+    <!-- flex-auto 
+        flex: 1 1 auto;
+        Item grows and shrinks as needed, based on content.
+    -->
+    <div class="flex gap-2">
+        <div class="bg-blue-300 flex-auto p-2">Short</div>
+        <div class="bg-green-300 flex-auto p-2">Much longer content here</div>
+    </div>
+
+    <br>
+    <!-- flex-none 
+        flex: none;
+        Item keeps its natural size (no grow, no shrink).
+    -->
+    <div class="flex gap-2 w-64 border">
+        <div class="bg-blue-300 flex-none p-2 w-32">Fixed</div>
+        <div class="bg-green-300 flex-1 p-2">Flexible</div>
+    </div>
+    
+</body>
+</html>
