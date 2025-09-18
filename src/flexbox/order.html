@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- order-<number> 
+        order: <number>;
+            Lower number = nauuna sa layout.
+    -->
+
+    <div class="flex gap-2 border-p-2">
+        <div class="bg-blue-400 p-2 order-2">Box 1</div>
+        <div class="bg-green-400 p-2 order-1">Box 2</div>
+        <div class="bg-red-400 p-2 order-3">Box 3</div>
+    </div>
+
+    <br>
+    <!-- -order-<number> 
+        order: calc(<number> * -1);
+        Negative order → mas mauuna pa kaysa sa default 0.
+    -->
+    <div class="flex gap-2 border p-2">
+        <div class="bg-blue-400 p-2 -order-1">Box 1 (-order-1)</div>
+        <div class="bg-green-400 p-2 order-0">Box 2 (order-0)</div>
+        <div class="bg-red-400 p-2">Box 3 (default)</div>
+    </div>
+
+    <br>
+    <!-- order-first 
+        order: -9999;
+        Force item to very first position.
+    -->
+    <div class="flex gap-2 border-p-2">
+        <div class="bg-blue-400 p-2">Box 1</div>
+        <div class="bg-green-400 p-2 order-first">Box 2 (order-first)</div>
+        <div class="bg-red-400 p-2">Box 3</div>
+    </div>
+
+
+    <br>
+    <!-- order-none 
+        order: 0;
+        Reset back to default order (0).
+    -->
+    <div class="flex gap-2 border p-2">
+        <div class="bg-blue-400 order-2">Box 1</div>
+        <div class="bg-green-400 p-2 order-none">Box 2 (reset)</div>
+        <div class="bg-red-400 p-2">Box 3</div>
+    </div>
+
+    <br>
+    <!-- order-[<value>] 
+        Custom value gamit arbitrary values.
+    -->
+    <div class="flex gap-2 border p-2">
+        <div class="bg-blue-400 p-2 order-[5]">Box 1 (order-5)</div>
+        <div class="bg-blue-400 p-2 order-[2]">Box 2 (order-2)</div>
+        <div class="bg-red-400 p-2">Box 3 (default)</div>
+    </div>
+    
+</body>
+</html>
