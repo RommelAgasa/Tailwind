@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Basis</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- basis-auto 
+        default, content decides the size.
+    -->
+    <div class="flex">
+        <div class="basis-auto bg-blue-300">Content decides width</div>
+    </div>
+
+
+    <br>
+    <!-- basis-full 
+        take 100% of container (block behavior).
+    -->
+    <div class="flex text-center">
+        <div class="basis-full bg-green-300">Full width</div>
+    </div>
+
+    <br>
+    <!-- basis-1/2, basis-1/3, basis-1/4
+        percentage-based fractions.
+    -->
+    <div class="flex">
+        <div class="basis-1/2 bg-pink-300">50%</div>
+        <div class="basis-1/2 bg-purple-300">50%</div>
+    </div>
+
+
+    <br>
+    <!-- basis-[200px] 
+        when you want exact pixel width.
+    -->
+    <div class="flex">
+        <div class="basis-[200px] bg-yellow-300">200px wide</div>
+    </div>
+
+    <br>
+    <!-- basis-sm, basis-md, basis-lg 
+        container-based presets (useful for responsive layouts).
+    -->
+    <div class="flex">
+        <div class="basis-sm bg-red-300">24rem wide</div>
+    </div>
+
+
+    <!-- Important Notes -->
+    <!--
+        flex-basis vs width:
+            If flex-basis is set, it overrides width when inside a flex container.
+            If you only need fixed sizing, w-... might be simpler.
+        
+        Combination with grow/shrink:
+            Example: basis-1/3 flex-grow → item starts at 1/3 width but can expand if space allows.
+    -->
+    
+</body>
+</html>
