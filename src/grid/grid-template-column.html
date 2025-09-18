@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-column</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        :root{
+            --layout-cols:4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- grid-cols-<number>
+        grid-template-columns: repeat(<number>, minmax(0, 1fr));
+    -->
+    <div class="grid grid-cols-3 gap-2 border p-2">
+        <div class="bg-blue-400 p-2">1</div>
+        <div class="bg-green-400 p-2">2</div>
+        <div class="bg-red-400 p-2">3</div>
+        <div class="bg-yellow-400 p-2">4</div>
+        <div class="bg-purple-400 p-2">5</div>
+        <div class="bg-pink-400 p-2">6</div>
+    </div>
+
+    <br>
+    <!-- grid-cols-none 
+        grid-template-columns: none;
+        Removes column template → items behave like block-level elements.
+    -->
+    <div class="grid grid-cols-none gap-2 border p-2">
+        <div class="bg-blue-400 p-2">1</div>
+        <div class="bg-green-400 p-2">2</div>
+        <div class="bg-red-400 p-2">3</div>
+    </div>
+
+    <br>
+    <!-- grid-cols-subgrid
+        grid-template-columns: subgrid;
+        Child grid inherits column sizes from parent grid (rarely used but powerful).
+    -->
+    <div class="grid grid-cols-3 gap-2 border p-2">
+        <div class="col-span-3 border-p-2">
+            <div class="grid grid-cols-subgrid gap-2">
+                <div class="bg-blue-400 p-2">Sub 1</div>
+                <div class="bg-green-400 p-2">Sub 2</div>
+                <div class="bg-red-400 p-2">Sub 3</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- grid-cols-[<value>] 
+        Custom template gamit arbitrary value.
+    -->
+    <div class="grid grid-cols-[200px,1fr,2fr] gap-2 border p-2">
+        <div class="bg-blue-400 p2">200px</div>
+        <div class="bg-green-400 p-2">1fr</div>
+        <div class="bg-red-400 p-2">2fr</div>
+    </div>
+    <!-- Column 1 fixed 200px, column 2 flexible 1fr, column 3 mas malaki 2fr. -->
+    
+    
+    <br>
+    <!-- grid-cols-(<custom-property>) 
+        Gumamit ng custom CSS variable.
+
+        it should be 4 column pero nung tinest parang d gumagana
+    -->
+    <div class="grid grid-cols-(--layout-cols) gap-2 border p-2">
+        <div class="bg-blue-400 p-2">1</div>
+        <div class="bg-green-400 p-2">2</div>
+        <div class="bg-red-400 p-2">3</div>
+        <div class="bg-yellow-400 p-2 text-black">4</div>
+    </div>
+
+</body>
+</html>
