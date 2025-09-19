@@ -374,20 +374,11 @@
   .col-start-2 {
     grid-column-start: 2;
   }
-  .col-end-1 {
-    grid-column-end: 1;
-  }
-  .col-end-2 {
-    grid-column-end: 2;
-  }
-  .col-end-3 {
-    grid-column-end: 3;
+  .col-start-3 {
+    grid-column-start: 3;
   }
   .col-end-4 {
     grid-column-end: 4;
-  }
-  .col-end-5 {
-    grid-column-end: 5;
   }
   .row-span-2 {
     grid-row: span 2 / span 2;
@@ -620,6 +611,9 @@
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
@@ -776,6 +770,18 @@
   }
   .break-after-right {
     break-after: right;
+  }
+  .auto-cols-auto {
+    grid-auto-columns: auto;
+  }
+  .auto-cols-fr {
+    grid-auto-columns: minmax(0, 1fr);
+  }
+  .auto-cols-max {
+    grid-auto-columns: max-content;
+  }
+  .auto-cols-min {
+    grid-auto-columns: min-content;
   }
   .grid-flow-col {
     grid-auto-flow: column;
