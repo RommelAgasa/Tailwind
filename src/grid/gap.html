@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gap</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <!-- gap-<number> 
+        Sets equal spacing between rows & columns.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border w-72">
+        <div class="bg-blue-400 h-10"></div>
+        <div class="bg-green-400 h-10"></div>
+        <div class="bg-red-400 h-10"></div>
+        <div class="bg-yellow-400 h-10"></div>
+        <div class="bg-purple-400 h-10"></div>
+        <div class="bg-pink-400 h-10"></div>
+    </div>
+
+    <br>
+    <!-- gap-x-<number> 
+        Only horizontal spacing.
+        Items spread out horizontally but rows stick together.
+    -->
+    <div class="grid grid-cols-3 gap-x-6 p-4 border w-72">
+        <div class="bg-blue-400 h-10"></div>
+        <div class="bg-green-400 h-10"></div>
+        <div class="bg-red-400 h-10"></div>
+    </div>
+
+    <br>
+    <!-- gap-y-<number> 
+        Only vertical spacing.
+        Only row spacing, columns stay tight.
+    -->
+    <div class="grid grid-cols-2 gap-y-4 p-4 border w-72">
+        <div class="bg-blue-400 h-10"></div>
+        <div class="bg-green-400 h-10"></div>
+        <div class="bg-red-400 h-10"></div>
+        <div class="bg-yellow-400 h-10"></div>
+    </div>
+
+
+
+</body>
+</html>
