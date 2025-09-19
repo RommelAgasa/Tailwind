@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-flow</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!---
+        Ito yung nagco-control kung paano pumupuno 
+        ng mga items ang grid kapag may extra items 
+        beyond the defined template.
+    -->
+
+    <!-- grid-flow-row (default) 
+        Items fill by rows first.
+        Items go row by row (left → right, then new row).
+    -->
+    <div class="grid grid-cols-2 grid-flow-row gap-2 w-64 border p-2">
+        <div class="bg-blue-400">1</div>
+        <div class="bg-green-400">2</div>
+        <div class="bg-red-400">3</div>
+        <div class="bg-yellow-400">4</div>
+        <div class="bg-purple-400">5</div>
+    </div>
+
+    <br>
+    <!-- grid-flow-col 
+        Items fill by columns first.
+    -->
+    <div class="grid grid-rows-3 grid-flow-col gap-2 border w-64 p-2">
+        <div class="bg-blue-400">1</div>
+        <div class="bg-green-400">2</div>
+        <div class="bg-red-400">3</div>
+        <div class="bg-yellow-400">4</div>
+        <div class="bg-purple-400">5</div>
+    </div>
+
+
+    <br>
+    <!-- grid-flow-dense
+        Fills empty gaps (rearranges later items to fit). 
+        Useful kapag may row-span or col-span.
+    -->
+    <div class="grid grid-cols-3 grid-flow-dense gap-2 w-64 border p-2">
+        <div class="bg-blue-400 col-span-2">1</div>
+        <div class="bg-green-400">2</div>
+        <div class="bg-red-400">3</div>
+        <div class="bg-yellow-400">4</div>
+        <div class="bg-purple-400">5</div>
+    </div>
+
+
+    <br>
+    <!-- grid-flow-row-dense 
+        Like row pero may dense packing.
+        Makes sure walang sayang na row space.
+    -->
+    <div class="grid grid-cols-3 grid-flow-row-dense gap-2 w-64 border p-2">
+        <div class="bg-blue-400 col-span-2">A</div>
+        <div class="bg-green-400">B</div>
+        <div class="bg-red-400">C</div>
+        <div class="bg-yellow-400">D</div>
+    </div>
+
+
+    <br>
+    <!-- grid-flow-col-dense 
+        Like col pero with dense packing.
+        Ensures na puno ang mga columns, kahit may spanning items.
+    -->
+    <div class="grid grid-rows-3 grid-flow-col-dense gap-2 w-64 border p-2">
+        <div class="bg-blue-400 row-span-2">X</div>
+        <div class="bg-green-400">Y</div>
+        <div class="bg-red-400">Z</div>
+        <div class="bg-yellow-400">W</div>
+    </div>
+
+
+
+
+    
+</body>
+</html>
