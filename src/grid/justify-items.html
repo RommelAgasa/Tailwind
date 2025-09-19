@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-items</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Note: works only in css grid, not flexbox -->
+
+    <!-- justify-items-start 
+        Aligns items to the start of their grid cell (left side).
+    -->
+    <div class="grid grid-cols-2 gap-4 p-4 border bg-gray-100 w-72">
+        <div class="justify-items-start grid bg-blue-400 h-16">A</div>
+        <div class="justify-items-start grid bg-green-400 h-16">B</div>
+        <div class="justify-items-start grid bg-red-400 h-16">C</div>
+    </div>
+
+    <br>
+    <!-- justify-items-end 
+        Aligns items to the end of their grid cell (right side).
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-72">
+        <div class="justify-items-end grid bg-blue-400 h-16">A</div>
+        <div class="justify-items-end grid bg-green-400 h-16">B</div>
+        <div class="justify-items-end grid bg-red-400 h-16">C</div>
+    </div>
+
+
+    <br>
+    <!-- justify-items-center 
+        Centers content inside each grid cell horizontally.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-72">
+        <div class="justify-items-center grid bg-blue-400 h-16">A</div>
+        <div class="justify-items-center grid bg-green-400 h-16">B</div>
+        <div class="justify-items-center grid bg-red-400 h-16">C</div>
+    </div>
+
+
+    <br>
+    <!-- justify-items-stretch 
+        Makes items stretch to fill their grid cell (if they have no fixed width).
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-72 justify-items-stretch">
+        <div class="bg-blue-400 h-16">A</div>
+        <div class="bg-green-400 h-16">B</div>
+        <div class="bg-red-400 h-16">C</div>
+    </div>
+
+
+
+</body>
+</html>

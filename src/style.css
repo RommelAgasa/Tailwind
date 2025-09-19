@@ -886,6 +886,18 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .justify-items-center {
+    justify-items: center;
+  }
+  .justify-items-end {
+    justify-items: end;
+  }
+  .justify-items-start {
+    justify-items: start;
+  }
+  .justify-items-stretch {
+    justify-items: stretch;
+  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
