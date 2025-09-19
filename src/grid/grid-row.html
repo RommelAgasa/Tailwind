@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-row</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- row-span-<number> 
+        Ginagamit para mag-extend ng isang item 
+        sa multiple rows.
+    -->
+    <div class="grid grid-cols-3 grid-rows-2 gap-2 w-64 h-64 border p-2">
+        <div class="bg-blue-400">1</div>
+        <div class="bg-green-400 row-span-2">2</div>
+        <div class="bg-red-400">3</div>
+        <div class="bg-yellow-400">4</div>
+        <div class="bg-purple-400">5</div>
+    </div>
+
+    <br>
+    <!-- row-span-full
+        Pinapahaba ang item para i-cover lahat ng rows.
+    -->
+    <div class="grid grid-cols-3 grid-rows-3 w-64 h-64 border p-2 gap-2">
+        <div class="bg-blue-400 row-span-full">1</div>
+        <div class="bg-green-400">2</div>
+        <div class="bg-red-400">3</div>
+        <div class="bg-yellow-400">4</div>
+        <div class="bg-purple-400">5</div>
+    </div>
+
+    <br>
+    <!-- row-start-<number> 
+        Saan magsisimula yung row placement ng item.
+    -->
+    <div class="grid grid-cols-2 grid-rows-4 gap-2 w-48 h-64 border p-2">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-green-400 row-start-3">B</div>
+        <div class="bg-red-400">C</div>
+    </div>
+
+    <br>
+    <div class="grid grid-flow-col grid-rows-3 gap-4 border">
+        <div class="row-span-2 row-start-2 bg-blue-400">01</div>
+        <div class="row-span-2 row-end-3 bg-pink-400">02</div>
+        <div class="row-start-1 row-end-4 bg-red-400">03</div>
+    </div>
+    
+</body>
+</html>
