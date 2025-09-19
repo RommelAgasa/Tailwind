@@ -798,6 +798,18 @@
   .grid-flow-row-dense {
     grid-auto-flow: row dense;
   }
+  .auto-rows-auto {
+    grid-auto-rows: auto;
+  }
+  .auto-rows-fr {
+    grid-auto-rows: minmax(0, 1fr);
+  }
+  .auto-rows-max {
+    grid-auto-rows: max-content;
+  }
+  .auto-rows-min {
+    grid-auto-rows: min-content;
+  }
   .grid-cols-\(--layout-cols\) {
     grid-template-columns: var(--layout-cols);
   }

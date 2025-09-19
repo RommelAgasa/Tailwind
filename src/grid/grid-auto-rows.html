@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-rows</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+
+    <!-- auto-rows-auto 
+        Rows size based on content (default).
+        Each row gets just enough height for its content.
+    -->
+    <div class="grid grid-cols-2 auto-rows-auto gap-2 border p-2 w-72">
+        <div class="bg-blue-400">Short</div>
+        <div class="bg-green-400">Tall <br> content <br> here</div>
+        <div class="bg-red-400 col-span-2">Another Row</div>
+    </div>
+
+    <br>
+    <!-- auto-rows-min
+        Row height shrinks to fit the minimum content (no extra space).
+    -->
+    <div class="grid grid-cols-2 auto-rows-min gap-2 border p-2 w-72">
+        <div class="bg-blue-400">Short</div>
+        <div class="bg-green-400">Tall <br> content <br> here</div>
+        <div class="bg-red-400 col-span-2">Another Row</div>
+    </div>
+
+    <br>
+    <!-- auto-rows-max 
+        Row grows to fit the tallest content in that row.
+    -->
+    <div class="grid grid-cols-2 auto-rows-max gap-2 border p-2 w-72">
+        <div class="bg-blue-400">Short</div>
+        <div class="bg-green-400">Tall <br> content <br> here</div>
+        <div class="bg-red-400 col-span-2">Another Row</div>
+    </div>
+
+    <br>
+    <!-- auto-rows-fr 
+        Each row takes equal space (like flexible columns).
+    -->
+    <div class="grid grid-cols-2 auto-rows-fr gap-2 border p-2 w-72 h-64">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-green-400">B</div>
+        <div class="bg-red-400">C</div>
+        <div class="bg-yellow-400">D</div>
+    </div>
+
+</body>
+</html>
