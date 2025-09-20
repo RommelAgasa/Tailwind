@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- 
+        Kung items-* ay pang-grupo, self-* ay 
+        pang-isang item lang (override ng parent items-*).
+    -->
+    
+
+    <!-- self-auto 
+        Default behavior, sundan ang items-* ng parent.
+    -->
+    <div class="flex items-center h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 h-8 self-auto">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-16">C</div>
+    </div>
+
+    <br>
+    <!-- self-start 
+        Item na ito ay nasa top/start ng cross-axis.
+    -->
+    <div class="flex items-center h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 h-16 self-start">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-16">C</div>
+    </div>
+
+
+    <br>
+    <!-- self-end 
+        Align sa bottom/end.
+    -->
+    <div class="flex items-center h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 h-8 self-end">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-16">C</div>
+    </div>
+
+    <br>
+    <!-- self-center 
+        Align isang item sa center.
+    -->
+    <div class="flex items-center h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16 self-center">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+
+    <br>
+    <!-- self-stretch 
+        Item ay stretch hanggang full cross-axis space.
+    -->
+    <div class="grid grid-cols-3 items-start h-40 border bg-gray-100">
+        <div class="bg-blue-400">A</div>
+        <div class="bg-green-400 self-stretch">B</div>
+        <div class="bg-red-400">C</div>
+    </div>
+
+
+
+    <br>
+    <!-- self-baseline 
+        Align item gamit text baseline.
+        utility to align an item such that its 
+        baseline aligns with the baseline of the 
+        flex container's cross axis:
+    -->
+    <div class="flex items-start h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 text-xs">Small</div>
+        <div class="bg-green-400 w-16 text-2xl self-baseline">Big</div>
+        <div class="bg-red-400 w-16 text-lg">Medium</div>
+    </div>
+
+
+</body>
+</html>
