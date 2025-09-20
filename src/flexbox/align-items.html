@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- 
+        Ito ay pang-cross-axis alignment (vertical kung flex-row, horizontal kung flex-col).
+    -->
+    
+
+    <!-- items-start 
+        Align lahat ng items sa top/start ng cross-axis.
+    -->
+    <div class="flex items-start h-40 border gap-2 bg-gray-100">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+
+    <br>
+    <!-- items-end 
+        Align lahat ng items sa bottom/end ng cross-axis.
+    -->
+    <div class="flex items-end h-40 border bg-gray-100 gap-2">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+
+    <br>
+    <!-- items-center 
+        Align lahat sa gitna ng cross-axis.
+    -->
+    <div class="flex items-center h-40 border bg-gray-100 gap-2">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+
+    <br>
+    <!-- items-baseline 
+        Align items gamit ang text baseline (useful kung iba-iba font size/line height).
+    -->
+    <div class="flex items-baseline h-40 border bg-gray-100 gap-2">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+
+    <br>
+    <!-- items-stretch 
+        (default sa grid, minsan sa flex depende sa height)
+        Kung walang fixed height, items stretch to fill container’s cross-axis.
+    -->
+    <div class="grid grid-cols-3 items-stretch h-40 border bg-gray-100">
+        <div class="bg-blue-400 w-16 h-8">A</div>
+        <div class="bg-green-400 w-16 h-16">B</div>
+        <div class="bg-red-400 w-16 h-24">C</div>
+    </div>
+    
+</body>
+</html>
