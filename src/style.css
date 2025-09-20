@@ -868,6 +868,24 @@
   .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
+  .content-around {
+    align-content: space-around;
+  }
+  .content-between {
+    align-content: space-between;
+  }
+  .content-center {
+    align-content: center;
+  }
+  .content-end {
+    align-content: flex-end;
+  }
+  .content-evenly {
+    align-content: space-evenly;
+  }
+  .content-start {
+    align-content: flex-start;
+  }
   .items-center {
     align-items: center;
   }
