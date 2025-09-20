@@ -875,6 +875,27 @@
   .flex-wrap-reverse {
     flex-wrap: wrap-reverse;
   }
+  .place-content-around {
+    place-content: space-around;
+  }
+  .place-content-between {
+    place-content: space-between;
+  }
+  .place-content-center {
+    place-content: center;
+  }
+  .place-content-end {
+    place-content: end;
+  }
+  .place-content-evenly {
+    place-content: space-evenly;
+  }
+  .place-content-start {
+    place-content: start;
+  }
+  .place-content-stretch {
+    place-content: stretch;
+  }
   .content-around {
     align-content: space-around;
   }

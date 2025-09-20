@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-content</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+
+    <!-- 
+        Think of it as shorthand ng align-content + justify-content.
+        Kung kailangan mo i-control ang vertical + 
+        horizontal spacing ng rows in grids (or multi-line 
+        flexbox), place-content is your shortcut.
+    -->
+    
+
+    <!-- place-content-center 
+        Both axes (vertical + horizontal) naka-center.
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-center bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+    <br>
+    <!-- place-content-start 
+        Content nasa top-left corner.
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-start bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+    
+
+    <br>
+    <!-- place-content-end 
+        Content nasa bottom-right.
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-end bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+
+    <br>
+    <!-- place-content-between 
+        Content naka-distribute with equal gaps in between.
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-between bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+
+    <br>
+    <!-- place-content-around
+        Content naka-distribute with space 
+        around (half gap sa edges). 
+        Use place-content-around to distribute grid items 
+        along the inline and block axes so that there is an 
+        equal amount of space around each row and column on 
+        each axis respectively:
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-around bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+
+
+    <br>
+    <!-- place-content-evenly 
+        Use place-content-evenly to distribute 
+        grid items such that they are evenly spaced 
+        on the inline and block axes:
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-evenly bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+
+    <br>
+    <!-- place-content-stretch 
+        Default — rows stretch to fill the available space.
+    -->
+    <div class="grid grid-cols-2 grid-rows-2 h-40 border gap-2 place-content-stretch bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+        <div class="bg-red-400 p-2">C</div>
+    </div>
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>
