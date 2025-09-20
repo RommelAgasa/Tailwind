@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-self</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- applies to a single grid item -->
+
+
+    <!-- justify-self-start 
+        Aligns that one item to the left of its grid cell.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-80 justify-items-center">
+        <div class="bg-blue-400 h-16 p-4">A</div>
+        <div class="bg-green-400 p-4 h-16 justify-self-start">B</div>
+        <div class="bg-red-400 h-16 p-4">C</div>
+    </div>
+
+    <br>
+    <!-- justify-self-center 
+        Centers that specific item inside its cell.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-80 justify-items-start">
+        <div class="bg-blue-400 h-16 p-4">A</div>
+        <div class="bg-green-400 h-16 p-4 justify-self-center">B</div>
+        <div class="bg-red-400 h-16 p-4">C</div>
+    </div>
+
+
+    <br>
+    <!-- justify-self-end 
+        Pushes a specific item to the right side of its grid cell.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-80 justify-items-center">
+        <div class="bg-blue-400 h-16 p-4">A</div>
+        <div class="bg-green-400 h-16 p-4 justify-self-end">B</div>
+        <div class="bg-red-400 h-16 p-4">C</div>
+    </div>
+
+
+    <br>
+    <!-- justify-self-stretch (default)
+        Fills the full width of the cell, unless you set a fixed width.
+    -->
+    <div class="grid grid-cols-3 gap-4 p-4 border bg-gray-100 w-80 justify-items-center">
+        <div class="bg-blue-400 h-16 p-4">A</div>
+        <div class="bg-green-400 h-16 p-4 justify-self-stretch text-center">B</div>
+        <div class="bg-red-400 h-16 p-4">C</div>
+    </div>
+
+    
+</body>
+</html>
