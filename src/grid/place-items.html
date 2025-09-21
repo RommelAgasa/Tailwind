@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-items</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- 
+        Ito parang short-hand siya ng dalawang properties:
+        place-items = align-items + justify-items
+    -->
+
+    <!-- place-items-start 
+        Parehong align-items (vertical) at justify-items (horizontal) naka-start.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-start bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+    </div>
+
+    <br>
+    <!-- 
+        place-items-end 
+        Parehong align-items (vertical) at justify-items (horizontal) naka-end.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-end bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+    </div>
+
+    <br>
+    <!-- 
+        place-items-center 
+        Parehong align-items (vertical) at justify-items (horizontal) naka-center.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-center bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+    </div>
+
+    <br>
+    <!-- 
+        place-items-stretch 
+        Parehong align-items (vertical) at justify-items (horizontal) naka-stretch.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-stretch bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2">B</div>
+    </div>
+
+    <br>
+    <!-- place-items-baseline 
+        kapag text alignment ang concern.
+        Parehong align-items (vertical) at justify-items (horizontal) naka-baseline.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-baseline bg-gray-100">
+        <div class="bg-blue-400 p-2 text-2xl">A</div>
+        <div class="bg-green-400 p-2">B</div>
+    </div>
+
+
+</body>
+</html>
