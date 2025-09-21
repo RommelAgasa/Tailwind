@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>place-self</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <!-- 
+        Ang place-self ay pang individual item sa grid (o minsan flex).
+        place-self = align-self + justify-self
+        place-self = para sa isang element lang.
+    -->
+    
+
+    <!-- place-self-auto
+        Default value. Ang item ay mag-aalign at magjojjustify base sa container nito.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-center bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2 place-self-auto">B</div>
+    </div>
+
+
+    <br>
+    <!-- place-self-start 
+        Si B lilipat sa top-left ng kanyang cell, kahit naka-center yung parent.
+    -->
+    <div class="grid grid-cols-2 h-40 place-items-center bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2 place-self-start">B</div>
+    </div>
+
+
+    <br>
+    <!-- place-self-end 
+        Si B lilipat sa bottom-right ng cell.
+    -->
+    <div class="grid grid-cols-2 h-40 border- place-items-center bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2 place-self-end">B</div>
+    </div>
+
+    <br>
+    <!-- place-self-center 
+        Kahit lahat naka-start, si B ay perfectly centered sa cell niya.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-start bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 p-2 place-self-center">B</div>
+    </div>
+
+    <br>
+    <!-- place-self-stretch 
+        Si B ay mag-stretch para punuin ang buong cell niya.
+    -->
+    <div class="grid grid-cols-2 h-40 border place-items-start bg-gray-100">
+        <div class="bg-blue-400 p-2">A</div>
+        <div class="bg-green-400 place-self-stretch">B</div>
+    </div>
+
+
+</body>
+</html>
